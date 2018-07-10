@@ -60,12 +60,12 @@ public class TimeEntryController
             return new ResponseEntity( HttpStatus.NOT_FOUND );
     }
 
-    @RequestMapping( path = "/time-entries", method=RequestMethod.GET )
+    @GetMapping( path = "/time-entries" )
     public ResponseEntity list()
     {
         List<TimeEntry> l = repo.list();
         if ( l.isEmpty() )
-            return new ResponseEntity( HttpStatus.NO_CONTENT );
+            return new ResponseEntity( l, HttpStatus.NO_CONTENT );
         else
             return new ResponseEntity( l, HttpStatus.OK );
     }
