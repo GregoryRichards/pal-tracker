@@ -1,6 +1,8 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  random-route: true
+  random-route: false
   env:
-    WELCOME_MESSAGE: Hello from Cloud Foundry
+    WELCOME_MESSAGE: Hello from the review environment
+  routes:
+    route: ps-pal-tracker-review.apps.pikes.pal.pivotal.io
