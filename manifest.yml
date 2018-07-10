@@ -5,4 +5,4 @@ applications:
   env:
     WELCOME_MESSAGE: Hello from the review environment
   routes:
-  - route: ps-pal-tracker-review.apps.pikes.pal.pivotal.io
+  - route: pal-tracker7-daring-possum.apps.pikes.pal.pivotal.io
