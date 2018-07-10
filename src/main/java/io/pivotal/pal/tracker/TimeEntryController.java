@@ -64,10 +64,7 @@ public class TimeEntryController
     public ResponseEntity list()
     {
         List<TimeEntry> l = repo.list();
-        if ( l.isEmpty() )
-            return new ResponseEntity( l, HttpStatus.NO_CONTENT );
-        else
-            return new ResponseEntity( l, HttpStatus.OK );
+        return new ResponseEntity( l, HttpStatus.OK );
     }
 
 
