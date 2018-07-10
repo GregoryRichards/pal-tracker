@@ -51,7 +51,10 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository
         {
 
         }
-        return list;
+        finally
+        {
+            return list;
+        }
     }
 
 
