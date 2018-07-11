@@ -13,9 +13,9 @@ public class TimeEntryController
 {
     protected TimeEntryRepository repo;
 
-    public TimeEntryController( TimeEntryRepository repo )
+    public TimeEntryController( TimeEntryRepository timeEntryRepository )
     {
-        this.repo = repo;
+        this.repo = timeEntryRepository;
     }
 
     @PostMapping( "/time-entries")
